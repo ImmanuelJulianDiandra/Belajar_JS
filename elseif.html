@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Else If JavaScripts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; 
+        }
+
+
+        label {
+            font-weight: bold;
+            color: #555;
+            font-size: 14px;
+        }
+
+
+        input[type="number"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            width: 100%;
+            box-sizing: border-box; 
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #4facfe;
+            box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+        }
+
+
+        button {
+            padding: 12px;
+            font-size: 16px;
+            color: #fff;
+            background: #4facfe;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #00f2fe;
+        }
+
+        button:active {
+            background: #0077b6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Belajar JavaScripts</h1>
+        <form>
+            <div>
+                <label for="angka1">Angka Pertama:</label>
+                <input type="number" id="angka1" placeholder="Masukkan angka pertama">
+            </div>
+            <div>
+                <label for="angka2">Angka Kedua:</label>
+                <input type="number" id="angka2" placeholder="Masukkan angka kedua">
+            </div>
+            <div>
+                <label for="angka3">Angka Ketiga:</label>
+                <input type="number" id="angka3" placeholder="Masukkan angka ketiga">
+            </div>
+            <button type="button" onclick="submitData()">Submit</button>
+        </form>
+    </div>
+    <script src="elseif.js"></script>
+</body>
+</html>
